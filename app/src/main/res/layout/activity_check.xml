@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckActivity">
+
+
+    <TextView
+        android:id="@+id/textViewchek"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Autenfificacion"
+        android:textColor="#212121"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/NumView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="num"
+        android:translationX="30dp"
+        android:translationY="100dp"
+        />
+    <TextView
+        android:id="@+id/SeguridadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="introduzca el codigo de seguridad"
+        android:translationX="10dp"
+        android:translationY="50dp"
+        />
+    <EditText
+        android:id="@+id/ApellidosText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="352dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Codigo de seguridad"
+        android:textColor="@color/colorSecondaryText"
+        android:translationX="30dp"
+        android:translationY="125dp"
+        />
+
+    <Button
+        android:id="@+id/buttonChecks"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginBottom="180dp"
+        android:background="@color/colorPrimary"
+        android:text="Siguiente"
+        android:textColor="#fff"
+        android:translationY="250dp" />
+
+    <TextView
+        android:id="@+id/nameText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a"
+        android:translationX="30dp"
+        android:translationY="300dp"/>
+
+    <TextView
+        android:id="@+id/lastText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="b"
+        android:translationX="30dp"
+        android:translationY="350dp"/>
+
+    <TextView
+        android:id="@+id/mail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a@gmail.com"
+        android:translationX="30dp"
+        android:translationY="400dp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+526251228799"
+        android:translationX="30dp"
+        android:translationY="450dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

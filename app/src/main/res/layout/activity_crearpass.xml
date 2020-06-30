@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Crearpass">
+
+
+    <EditText
+        android:id="@+id/newpassText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="352dp"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:hint="Nueva contraseña"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/colorSecondaryText"
+        android:translationX="50dp"
+        android:translationY="80dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewpass"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Crear contraseña"
+        android:textColor="#212121"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/nuevaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva contrasena"
+        android:translationX="32dp"
+        android:translationY="50dp"/>
+
+    <TextView
+        android:id="@+id/confText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar contrasena"
+        android:translationX="32dp"
+        android:translationY="150dp"/>
+
+    <EditText
+        android:id="@+id/confpassText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="352dp"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:hint="Confirmar contraseña"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/colorSecondaryText"
+        android:translationX="50dp"
+        android:translationY="180dp"
+        />
+
+    <Button
+        android:id="@+id/buttonpass"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@color/colorPrimary"
+        android:text="Siguiente"
+        android:textColor="#fff"
+
+        android:translationY="250dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

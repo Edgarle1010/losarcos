@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scroll"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:scrollbarSize="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="699dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="31dp">
+
+
+            <Button
+                android:id="@+id/pizza"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/pizza"
+                android:text=""
+                android:onClick="Pizzasact"
+                android:translationY="30dp" />
+
+            <Button
+                android:id="@+id/hamburgesa"
+                android:layout_width="match_parent"
+                android:layout_toStartOf="@id/button2"
+                android:layout_height="100dp"
+                android:translationY="130dp"
+                android:layout_alignParentEnd="@id/pizza"
+                android:onClick="hamburgesa"
+                android:background="@drawable/hamburguesas"
+                android:text="" />
+
+            <Button
+                android:id="@+id/ensalada"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@id/button2"
+                android:background="@drawable/ensaladas"
+                android:text=""
+                android:onClick="ensalada"
+                android:translationY="130dp" />
+
+            <Button
+                android:id="@+id/platillos"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text=""
+                android:onClick="platillos"
+                android:layout_toEndOf="@id/button2"
+                android:background="@drawable/platillo"
+                android:translationY="230dp" />
+
+            <Button
+                android:id="@+id/mariscos"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toStartOf="@id/button2"
+                android:background="@drawable/marisco"
+                android:text=""
+                android:onClick="marisco"
+                android:translationY="230dp" />
+
+            <Button
+                android:id="@+id/desayunos"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:translationY="330dp"
+                android:layout_toStartOf="@id/button2"
+                android:background="@drawable/desayunos"
+                android:text=""
+                android:onClick="desayuno"/>
+
+            <Button
+                android:id="@+id/bebidas"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@id/button2"
+                android:background="@drawable/bebidas"
+                android:translationY="330dp"
+                android:text=""
+                android:onClick="bebidas"/>
+
+            <Button
+                android:id="@+id/postres"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:translationY="430dp"
+                android:layout_toStartOf="@id/button2"
+                android:background="@drawable/postres"
+                android:text=""
+                android:onClick="postres"/>
+
+            <Button
+                android:id="@+id/nieves"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:translationY="430dp"
+                android:layout_toEndOf="@id/button2"
+                android:background="@drawable/nieves_malteadas"
+                android:text=""
+                android:onClick="nieves"
+                />
+            <Button
+                android:id="@+id/kids"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text=""
+                android:onClick="kids"
+                android:background="@drawable/kids"
+                android:translationY="530dp"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="400dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:translationY="100dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Menu de"
+        android:textColor="#212121"
+        android:textSize="15dp"
+        />
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

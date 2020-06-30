@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Informacion del perfil"
+        android:textColor="#212121"
+        android:textSize="15dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:scrollbarSize="1dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbarDefaultDelayBeforeFade="00"
+            android:scrollbarFadeDuration="0"
+            android:transformPivotY="-100dp"
+            android:transitionGroup="false">
+
+            <EditText
+                android:id="@+id/NombreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre(s)"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textColor="@color/colorSecondaryText"
+                android:translationX="50dp"
+                android:translationY="75dp"
+
+                />
+
+            <EditText
+                android:id="@+id/ApellidosText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="352dp"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:hint="Apellidos"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textColor="@color/colorSecondaryText"
+                android:translationX="50dp"
+                android:translationY="125dp" />
+
+            <EditText
+                android:id="@+id/EmailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="56dp"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textColor="@color/colorSecondaryText"
+                android:translationX="50dp"
+                android:translationY="-150dp" />
+
+            <TextView
+                android:id="@+id/ApellidosView4"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="152dp"
+                android:layout_marginBottom="396dp"
+                android:text="Apellidos"
+                android:translationX="50dp"
+                android:translationY="-340dp"
+                />
+
+            <TextView
+                android:id="@+id/NombreView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre(s)"
+                android:translationX="50dp"
+                android:translationY="-850dp" />
+
+            <TextView
+                android:id="@+id/MailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:translationX="50dp"
+                android:translationY="-650dp"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <Button
+        android:id="@+id/buttonRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginBottom="180dp"
+        android:background="@color/colorPrimary"
+        android:text="Siguiente"
+        android:textColor="#fff"
+        android:translationY="400dp" />
+</RelativeLayout>
